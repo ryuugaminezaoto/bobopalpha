@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <title>Control de Bobop</title>
+  </head>
+  <body>
+    <h1>Bobop</h1>
+
+<table>
+
+<tr>
+<td>
+</td>
+</tr>
+<tr>
+
+<td>
+</td>
+
+<td>
+<form action="/1" method="POST">
+    <input type="image" src="/static/img/AVANZAR.png" value="avanza" name="motor">
+</form>
+</td>
+
+<td>
+</td>
+</tr>
+
+<tr>
+<td>
+<form action="/3" method="POST">
+    <input type="image" src="/static/img/IZQUIERDA.png" value="girai" name="motor">
+</form>
+</td>
+
+<td>
+<form action="/5" method="POST">
+    <input type="image" src="/static/img/DETENER.png" value="detente" name="motor">
+</form>
+</td>
+
+<td>
+<form action="/4" method="POST">
+    <input type="image" src="/static/img/DERECHA.png" value="girad" name="motor">
+</form>
+</td>
+</tr>
+
+<tr>
+<td>
+</td>
+
+<td>
+<form action="/2" method="POST">
+    <input type="image" src="/static/img/RETROCEDE.png" value="retrocede" name="motor">
+</form>
+</td>
+
+<td>
+</td>
+</tr>
+
+<form action="/6" method="POST">
+    <input type="image" src="/static/img/PRENDEROJOS.png" value="abreojos" name="ojos">
+</form>
+
+<form action="/7" method="POST">
+    <input type="image" src="/static/img/DORMIR.png" value="cierraojos" name="ojos">
+</form>
+
+<form action="/8" method="POST">
+    <input type="image" src="/static/img/GUINO.png" value="guino" name="ojos">
+</form>
+
+<form action="/9" method="POST">
+    <input type="image" src="/static/img/FELIZ.png" value="sonrie" name="ojos">
+</form>
+
+<form action="/10" method="POST">
+    <input type="image" src="/static/img/PARPADEA.png" value="parpadea" name="ojos">
+</form>
+
+<form action="/11" method="POST">
+    <input type="image" src="/static/img/APAGAROJOS.png" value="apagaojos" name="ojos">
+</form>
+
+<tr>
+<td>
+</td>
+</tr>
+
+<tr>
+<td>
+<form action="/12" method="POST" onsubmit="return confirmar()">
+   <input type="image" src="/static/img/APAGAR.png"></input>
+</form>
+<td>
+</tr>
+
+<script>
+function confirmar(){
+    if (confirm("Apagar"))
+        return true;
+    return false;
+}
+</script>
+
+</table>
+
+  </body>
+</html>
